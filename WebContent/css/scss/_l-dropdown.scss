@@ -1,0 +1,39 @@
+$color: #bec0c6;
+
+.dropdown-menu {
+	min-width: 600px;
+	background-color: $color !important;
+	border: 1px solid black !important;
+
+	& li a {
+		padding: 0px 4px;
+		font-weight: 300;
+	}
+}
+
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu 
+.multi-column-dropdown {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.multi-column-dropdown {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+	font-size: 14px;
+	
+	&#browse{
+		font-weight:bold;
+	}
+}

@@ -1,0 +1,28 @@
+// Login page
+
+html#login{
+	background-color: #bec0c6;
+}
+body#login{
+	background-color: transparent !important;
+}
+
+.l-login{
+
+	&__box{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 350px; 
+		margin: 0 auto; 
+		margin-top: 50px;
+		padding: 40px 20px 60px 20px;
+		background-color: #FFFFFF;
+		border: 1px solid black;
+		}
+		
+	&__logo{
+		margin: 0 auto; 
+		display: block; 
+		padding-bottom: 15px;
+		}
+		
+}

@@ -1,0 +1,17 @@
+//dashboard
+
+
+.l-dashboard{
+	
+	&__box{
+		@extend .l-login__box;
+		margin: 0px 40px 0px 40px;
+		margin-top: 50px;
+		padding-top: 20px;
+	}
+
+	&__container{
+		display:flex;
+		justify-content: center;
+	}
+}

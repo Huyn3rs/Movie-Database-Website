@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Copyright 2004 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <display-name>Fabflix Website</display-name>
+    <description>
+      Fabflix Website for Project 2
+    </description>
+
+
+  <!-- Define servlets that are included in the example application -->
+
+
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DashboardLogin</servlet-name>
+    <servlet-class>servlets.DashboardLoginServlet</servlet-class> 
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>servlets.DashboardServlet</servlet-class> 
+  </servlet>
+
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>servlets.HomeServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>servlets.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Browse</servlet-name>
+    <servlet-class>servlets.BrowseServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>View</servlet-name>
+    <servlet-class>servlets.ViewServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Reports</servlet-name>
+  	<servlet-class>servlets.ReportServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Cart</servlet-name>
+  	<servlet-class>servlets.CartServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Checkout</servlet-name>
+  	<servlet-class>servlets.CheckoutServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>Confirmed</servlet-name>
+  	<servlet-class>servlets.ConfirmedServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Auto</servlet-name>
+    <servlet-class>servlets.AutoCompleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>PopUp</servlet-name>
+  	<servlet-class>servlets.AutoPopUpServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Mobile_Login</servlet-name>
+  	<servlet-class>servlets.AppLoginServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>Mobile_Search</servlet-name>
+  	<servlet-class>servlets.AppSearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DashboardLogin</servlet-name>
+    <url-pattern>/dashboard/login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Dashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Browse</servlet-name>
+    <url-pattern>/browse</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>View</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Cart</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Checkout</servlet-name>
+    <url-pattern>/checkout</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Confirmed</servlet-name>
+    <url-pattern>/confirmed</url-pattern>
+  </servlet-mapping>
+   
+   <servlet-mapping>
+    <servlet-name>Auto</servlet-name>
+    <url-pattern>/auto</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PopUp</servlet-name>
+    <url-pattern>/popup</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Reports</servlet-name>
+    <url-pattern>/reports</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>Mobile_Login</servlet-name>
+    <url-pattern>/app/login</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>Mobile_Search</servlet-name>
+    <url-pattern>/app/search</url-pattern>
+  </servlet-mapping> 
+  
+    
+  <resource-ref>
+	<description>
+		Resource reference to a factory for java.sql.Connection
+		instances that may be used for talking to a particular
+		database that
+		is configured in the server.xml file.
+	</description>
+	<res-ref-name>
+		jdbc/TestDB
+	</res-ref-name>
+	<res-type>
+		javax.sql.DataSource
+	</res-type>
+	<res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <!-- <security-constraint>
+    <web-resource-collection>
+    <web-resource-name>HTTPSOnly</web-resource-name>
+    <url-pattern>/*</url-pattern>
+ </web-resource-collection>
+ <user-data-constraint>
+    <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+ </user-data-constraint>
+</security-constraint> -->
+
+
+
+</web-app>

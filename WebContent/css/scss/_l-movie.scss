@@ -1,0 +1,84 @@
+//Movie Listing
+
+
+.movie{
+	&__popup{
+		color: #000000;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&--link:hover{
+			text-decoration: none;
+		}
+		&:hover{
+			color: #ffffff;
+			background-color: #5a98fc; 
+		}
+	}
+
+	&__autocomplete{
+		color: #000000;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&--link:hover{
+			text-decoration: none;
+		}
+		&:hover{
+			color: #ffffff;
+			background-color: #5a98fc; 
+		}
+	}
+	
+	&__listing{
+		width: 700px; 
+		margin: 0 auto !important; 
+		margin-top: 20px !important;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border: 1px solid #bec0c6; 
+
+		&--popup{
+			@extend .movie__listing;
+			width: 525px;
+		}
+	}
+
+	&__poster{
+		padding: 0px !important; 
+	 	width: 175px;
+	}
+
+	&__info{
+		padding: 0px 15px 0px 20px !important;
+		width: 525px;
+	}
+
+	&__id{
+		display:inline; 
+		float:right;
+
+	}
+
+	&__trailer{
+		display:inline-block;
+	}
+
+	&__year{
+		display:inline-block;
+	}
+
+	&__director{
+		margin-bottom: 0px;
+	}
+
+	&__link{
+		@extend .l-home__link;
+		font-size: 36px !important;
+		display: block !important;
+	}
+
+	&__genres{
+		//position: absolute; 
+		//bottom: 0;
+	}
+}

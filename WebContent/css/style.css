@@ -1,0 +1,224 @@
+.dropdown-menu {
+  min-width: 600px;
+  background-color: #bec0c6 !important;
+  border: 1px solid black !important; }
+  .dropdown-menu li a {
+    padding: 0px 4px;
+    font-weight: 300; }
+
+.dropdown-menu.columns-3 {
+  min-width: 600px; }
+
+.dropdown-menu
+.multi-column-dropdown {
+  list-style: none;
+  padding-left: 20px; }
+
+.multi-column-dropdown {
+  list-style: none;
+  padding-left: 20px; }
+
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: #333;
+  white-space: normal;
+  font-size: 14px; }
+  .multi-column-dropdown li a#browse {
+    font-weight: bold; }
+
+body {
+  min-width: 870px; }
+
+.l-home__col {
+  height: 85px !important; }
+.l-home__header {
+  width: 100% !important;
+  height: 85px;
+  background-color: #bec0c6;
+  border-bottom: 1px solid black; }
+  .l-home__header--logout {
+    float: right; }
+.l-home__title {
+  padding-top: 5px; }
+.l-home__dropdown {
+  display: inline;
+  position: absolute;
+  bottom: 15px; }
+.l-home__cart {
+  padding-right: 15px; }
+.l-home__search {
+  position: absolute;
+  bottom: 15px;
+  right: 16px;
+  padding: 0px 15px 0px 15px; }
+.l-home__link, .l-home__header--logout__link, .movie__link, .actor__link {
+  color: black !important; }
+  .l-home__link a:hover, .l-home__header--logout__link a:hover, .movie__link a:hover, .actor__link a:hover {
+    text-decoration: none; }
+
+.fabflix__pop-up {
+  position: absolute;
+  width: 430px;
+  height: 100%;
+  left: 1px;
+  top: 0px;
+  background: #FFFFFF;
+  display: none;
+  z-index: 20;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.fabflix__drop-down {
+  position: absolute;
+  width: 217px;
+  right: 64px;
+  top: 69px;
+  background: #FFFFFF;
+  border: 1px solid #bec0c6;
+  display: none;
+  z-index: 20; }
+.fabflix__price {
+  float: right;
+  margin-bottom: 10px; }
+.fabflix__body {
+  padding: 0px 80px 30px 80px;
+  min-height: 500px; }
+.fabflix__content {
+  min-height: 500px;
+  padding-bottom: 20px; }
+.fabflix__search-box {
+  margin-top: 30px !important;
+  border: none !important; }
+.fabflix__checkout-box {
+  margin-top: 30px !important;
+  border: none !important;
+  width: 750px !important; }
+.fabflix__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 20px; }
+  .fabflix__wrapper__pagination {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px; }
+.fabflix__results-counter {
+  margin-right: auto; }
+.fabflix__results-error {
+  text-align: center; }
+.fabflix__sort-box {
+  width: 110px;
+  margin-bottom: 10px; }
+.fabflix__display-box {
+  width: 160px;
+  margin-bottom: 10px; }
+.fabflix__add-to-cart {
+  float: right;
+  margin-bottom: 23px; }
+.fabflix__update-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 23px;
+  float: right; }
+  .fabflix__update-cart--form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+.fabflix__count {
+  width: 40% !important; }
+
+html#login {
+  background-color: #bec0c6; }
+
+body#login {
+  background-color: transparent !important; }
+
+.l-login__box, .fabflix__search-box, .fabflix__checkout-box, .l-dashboard__box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px 20px 60px 20px;
+  background-color: #FFFFFF;
+  border: 1px solid black; }
+.l-login__logo {
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 15px; }
+
+.movie__popup {
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .movie__popup--link:hover {
+    text-decoration: none; }
+  .movie__popup:hover {
+    color: #ffffff;
+    background-color: #5a98fc; }
+.movie__autocomplete {
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .movie__autocomplete--link:hover {
+    text-decoration: none; }
+  .movie__autocomplete:hover {
+    color: #ffffff;
+    background-color: #5a98fc; }
+.movie__listing, .movie__listing--popup {
+  width: 700px;
+  margin: 0 auto !important;
+  margin-top: 20px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #bec0c6; }
+  .movie__listing--popup {
+    width: 525px; }
+.movie__poster {
+  padding: 0px !important;
+  width: 175px; }
+.movie__info {
+  padding: 0px 15px 0px 20px !important;
+  width: 525px; }
+.movie__id {
+  display: inline;
+  float: right; }
+.movie__trailer {
+  display: inline-block; }
+.movie__year {
+  display: inline-block; }
+.movie__director {
+  margin-bottom: 0px; }
+.movie__link {
+  font-size: 36px !important;
+  display: block !important; }
+
+.actor__listing {
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto !important;
+  margin-top: 20px !important;
+  border: 1px solid #bec0c6; }
+.actor__poster {
+  padding: 0px !important;
+  width: 166px; }
+.actor__info {
+  padding: 0px 15px 0px 20px !important;
+  width: 333px; }
+.actor__link {
+  font-size: 36px !important; }
+
+.l-dashboard__box {
+  margin: 0px 40px 0px 40px;
+  margin-top: 50px;
+  padding-top: 20px; }
+.l-dashboard__container {
+  display: flex;
+  justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */

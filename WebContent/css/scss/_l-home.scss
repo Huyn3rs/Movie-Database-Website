@@ -1,0 +1,169 @@
+//Home page
+body{
+	min-width: 870px;
+}
+
+.l-home{
+	&__col{
+		height:85px !important;
+	}
+
+	&__header{
+		width: 100% !important; 
+		height: 85px; 
+		background-color: #bec0c6;
+		border-bottom: 1px solid black;
+
+		&--logout{
+			float:right;
+
+			&__link{
+				@extend .l-home__link;
+			}
+		}
+	}
+
+	&__title{
+		padding-top: 5px; 
+	}
+	&__dropdown{
+		display:inline;
+		position:absolute;
+		bottom: 15px;
+	}
+	&__cart{
+		padding-right: 15px;
+	}
+	
+	&__search{
+		position:absolute;
+		bottom: 15px;
+		right: 16px;
+		padding: 0px 15px 0px 15px;
+	}
+
+	&__link{
+		color:black !important;
+
+		& a:hover{
+			text-decoration: none;
+		}
+	}
+
+}
+
+
+.fabflix{
+	&__pop-up{
+		position: absolute;
+		width: 430px;
+		height: 100%;
+		left: 1px;
+		top: 0px; 
+		background: #FFFFFF;
+		//border: 1px solid #bec0c6;
+		display: none;
+		z-index: 20;
+		padding: 15px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	&__drop-down{
+		position: absolute;
+		width: 217px;
+		right: 64px;
+		top: 69px; 
+		background: #FFFFFF;
+		border: 1px solid #bec0c6;
+		display: none;
+		z-index: 20;
+	}
+
+	&__price{
+		float: right;
+		margin-bottom: 10px;
+	}
+
+	&__body{
+		padding: 0px 80px 30px 80px;
+		min-height: 500px;
+	}
+	&__content{
+		//border:1px solid black;
+		min-height: 500px;
+		padding-bottom: 20px;
+		//background-color: #e0e0e0;
+
+	}
+	&__search-box{
+		margin-top: 30px !important;
+		border: none !important;
+		@extend .l-login__box;
+	}
+
+	&__checkout-box{
+		margin-top: 30px !important;
+		border: none !important;
+		width: 750px !important;
+		@extend .l-login__box;
+	}
+
+	&__wrapper{
+		display:flex; 
+		flex-direction: row-reverse; 
+		width: 700px; 
+		margin: 0 auto;
+		margin-top: 20px;
+
+		&__pagination{
+			display: flex;
+			align-items: center;
+			width: 700px; 
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}	
+
+	&__results-counter{
+		margin-right: auto;
+	}
+
+	&__results-error{
+		text-align: center;
+	}
+
+	&__sort-box{
+		width: 110px;
+		margin-bottom: 10px;
+	}
+
+	&__display-box{
+		width: 160px;
+		margin-bottom: 10px;
+	}
+
+	&__add-to-cart{
+		float: right; 
+		margin-bottom: 23px;
+	}
+
+	&__update-cart{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-bottom: 23px;
+		float:right;
+
+		&--form{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+	}
+
+	&__count{
+		width: 40% !important;
+	}
+}
+
+
